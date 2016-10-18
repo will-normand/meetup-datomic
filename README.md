@@ -24,3 +24,22 @@ Try some queries to find data - e.g. to find all the groups who's had a meeting 
            [?e :event/attendance 5]
            [?e :event/group ?g]]
          (d/db conn))
+
+## Things to try
+
+### Queries
+
+1. Find all the events this week
+2. List the websites of groups with more than 50 members
+3. Find all the groups which have held an event with more than 20 attendees this year.
+
+### Transactions
+
+1. Add a new event for Edinburgh-Clojurians
+2. Try out changing the yes_rsvp_count of today's event using (d/with).  Verify that your real data has not changed,
+
+### Testing
+
+1. Write functions for the earlier queries.
+2. Write unit tests in `core_tests.clj` which test your query functions with some example data.  Run them with 
+   `lein test`
