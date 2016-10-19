@@ -8,5 +8,6 @@
                  [org.clojure/data.json "0.2.6"]
                  [clj-time "0.12.0"]
                  [com.datomic/datomic-free "0.9.5404"]]
+  :main ^:skip-aot meetup-datomic.database
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
